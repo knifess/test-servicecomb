@@ -22,7 +22,7 @@ public class ServicecombspringmvcImpl {
         method = RequestMethod.GET)
     public String helloworld( @RequestParam(value = "name", required = true) String name){
 
-        return userServicecombspringmvcDelegate.helloworld(name);
+        return userServicecombspringmvcDelegate.helloworld("hello," + name + ", welcome by zqy");
     }
 
 }
